@@ -1,0 +1,36 @@
+body{
+    margin:5px;
+    padding:5px;
+    line-height:1.15;
+ }
+  
+ h1,h2, h3{
+    font-weight: bold;
+    margin-top:15px;
+  
+ }
+ nav li{
+    margin-left: 25px;
+    list-style-type: upper-roman;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: aqua;
+    border-color: green;
+    width: 20%;
+    margin: 20px;
+ }
+ #current{
+    background-color: yellow;
+    border-color: black;
+ }
+
+ p{
+     cursor: w-resize;
+     border-radius: 15px;
+     border-style: dotted;
+     margin: 0px 30px;
+     text-align: center;
+ }
+
