@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games I Play Too Much</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/flex.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div class="skip"><a href="#main" tabindex=0>Skip to Main Content</a></div>
+        <a href="#main" class="skip" tabindex=0>Skip to content</a>
         <nav>
-            <ul>
+            <ul class="flex">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href="terraria.html">Terraria</a></li>
                 <li><a href="btd5.html">Bloons Tower Defense 5</a></li>
@@ -24,7 +27,7 @@
     </header>
     
     <main id="main">    
-        <p>These are a bunch of other games that I've played for far too long over the years, but I don't have a lot of screenshots for each.</p>
+        <p>These are a bunch of other games that I've played for far too long over the years, but I don't have a lot of screenshots for each.<br>Feel free to click on the images for a closer look and maybe some hidden captions!</p>
         
         <h2>Dead By Daylight</h2>
         <!-- <h3>What is Dead By Daylight?</h3>
@@ -32,64 +35,93 @@
             Google it <a href="https://www.google.com/search?q=dead+by+daylight">here</a>
         </p> -->
         <h3>Gallery</h3>
-        <img src="images/Dbd/Ghostface.PNG" alt="An screenshot of a 4k game with Ghostface" width=60% />
+        <a href="images/Dbd/Ghostface.PNG" target="light" data-lightbox="dbd" data-title="The only screenshot I have of Dead By Daylight" data-alt="Ghostface">
+            <img src="images/Dbd/Ghostface.PNG" alt="A screenshot of a 4k game with Ghostface" width=60% />
+        </a>
 
         <h2>Brawl Stars</h2>
         <!-- <h3>What is Brawl Stars?</h3>
         <p>
             Google it <a href="https://www.google.com/search?q=brawl+stars">here</a>
         </p> -->
-        <img src="images/Brawl/IMG_1250.PNG" alt="A picture of my Brawl Stars profil" width=60% />
-
+        <a href="images/Brawl/IMG_1250.PNG" target="light" data-lightbox="brawl" data-title="A screenshot of my Brawl Stars profile. Pay no attention to the number of 3v3 victories I have." data-alt="Brawl Stars profile">
+            <img src="images/Brawl/IMG_1250.PNG" alt="A picture of my Brawl Stars profile" width=60% />
+        </a>
         <h2>Clash of Clans</h2>
         <!-- <h3>What is Clash of Clans?</h3>
         <p>
             Google it <a href="https://www.google.com/search?q=clash+of+clans">here</a>
         </p> -->
-        <img src="images/Clash/Home1.PNG" alt="Home base of tech009, TH11" width=50%/>
-        <p class="caption">Home base of tech009, my main account</p>
-        <img src="images/Clash/Night.PNG" alt="Night base of tech009, BH9" width=50%/>
-        <p class="caption">Night base of tech009, my main account</p>
-        <img src="images/Clash/Home2.PNG" alt="Home base of DynAstei, TH10" width=50%/>
-        <p class="caption">Home base of DynAstei, my second account</p>
+        <a href="images/Clash/Home1.PNG" target="light" data-lightbox="coc" data-title="Home base of tech009, my main account." data-alt="Home base 1">
+            <img src="images/Clash/Home1.PNG" alt="Home base of tech009, TH11" width=50%/>
+        </a>
+        <a href="images/Clash/Night.PNG" target="light" data-lightbox="coc" data-title="Night base of tech009. Yes it's rushed, but trust me that's the optimal path for night base." data-alt="Night base">
+            <img src="images/Clash/Night.PNG" alt="Night base of tech009, BH9" width=50%/>
+        </a>
+        <a href="images/Clash/Home2.PNG" target="light" data-lightbox="coc" data-title="Home base of DynAstei, my second account. I created this account when things started getting slow on my main account, but now things are slow on both accounts." data-alt="Home base 2">
+            <img src="images/Clash/Home2.PNG" alt="Home base of DynAstei, TH10" width=50%/>
+        </a>
 
         <h2>Pocket Trains</h2>
         <!-- <h3>What is Pocket Trains?</h3> -->
-        <p>
-            <!-- Google it <a href="https://www.google.com/search?q=pocket+trains">here</a>
-            <br> -->
-            I built railroads all over the world while listening to STATS 250 lecture online</p>
-        <img src="images/Trains/NA.PNG" alt="North America" width="30%"/>
-        <img src="images/Trains/Europe.PNG" alt="Europe" width="30%"/>
-        <img src="images/Trains/Asia.PNG" alt="Asia" width="30%"/>
-        <img src="images/Trains/SA.PNG" alt="South America" width="30%"/>
-        <img src="images/Trains/Africa.PNG" alt="Africa" width="30%"/>
-        <img src="images/Trains/Australia.PNG" alt="Australia" width="30%"/>
+        <!-- <p>
+            Google it <a href="https://www.google.com/search?q=pocket+trains">here</a>
+            <br>
+            I built railroads all over the world while listening to STATS 250 lecture online</p> -->
+        
+        <a href="images/Trains/NA.PNG" target="light" data-lightbox="train" data-title="I played so much Pocket Trains in high school and later in STATS 250 that I ended up building every single railroad in the game." data-alt="North America">
+            <img src="images/Trains/NA.PNG" alt="North America" width="30%"/>
+        </a>
+        <a href="images/Trains/Europe.PNG" target="light" data-lightbox="train" data-title="Europe is where I started. As a result, it has some of the worst trains in the game (except for the blue one through Helsinki, they added that track later so I had a better train to put on it." data-alt="Europe">
+            <img src="images/Trains/Europe.PNG" alt="Europe" width="30%"/>
+        </a>
+        <a href="images/Trains/Asia.PNG" target="light" data-lightbox="train" data-title="Asia was too big to fit most of it in a screenshot, but the rest of Asia is mostly open space, not many major cities to run tracks through." data-alt="Asia">
+            <img src="images/Trains/Asia.PNG" alt="Asia" width="30%"/>
+        </a>
+        <a href="images/Trains/SA.PNG" target="light" data-lightbox="train" data-title="You may have noticed by now there are tracks that go on water. They're supposed to go under the ocean, with one of the most outrageous going from New York to Libson. I can't explain this other than it's just a game, I guess." data-alt="South America">
+            <img src="images/Trains/SA.PNG" alt="South America" width="30%"/>
+        </a>
+        <a href="images/Trains/Africa.PNG" target="light" data-lightbox="train" data-title="South Africa got cut off. You can't see it, but there's another underwater track that runs from Madagascar to Perth. You can see it in the Australia picture." data-alt="Africa">
+            <img src="images/Trains/Africa.PNG" alt="Africa" width="30%"/>
+        </a>
+        <a href="images/Trains/Australia.PNG" target="light" data-lightbox="train" data-title="I finished in Australia. As a result, Australia has the best trains in the game running through it. Unfortunately there are no cities in Antarctica so the game ends here.  :(" data-alt="Australia">
+            <img src="images/Trains/Australia.PNG" alt="Australia" width="30%"/>
+        </a>
 
         <h2>Plants vs. Zombies</h2>
         <!-- <h3>What is Plants vs. Zombies?</h3>
         <p>
             Google it <a href="https://www.google.com/search?q=plants+vs+zombies">here</a>
         </p> -->
-        <img src="images/PvZ/IMG_1239.PNG" alt="PvZ 2 last level" width=50%/>
-        <p class="caption">This screenshot is of the last level, showing I beat it. Unfortunately, I can't get screenshots of what I did in PvZ 1 (I had it on my DS years ago) or of what I did a few years ago in PvZ2 when I was up to level 140+ in the endless mode Pyramid of Doom</p>
+        <a href="images/PvZ/IMG_1239.PNG" target="light" data-lightbox="pvz" data-title="This screenshot is of the last level, showing I beat it. Unfortunately, I can't get screenshots of what I did in PvZ 1 (I had it on my DS years ago) or of what I did a few years ago in PvZ2 when I was up to level 140+ in the endless mode Pyramid of Doom." data-alt="PvZ 2">
+            <img src="images/PvZ/IMG_1239.PNG" alt="PvZ 2 last level" width=50%/>
+        </a>
 
         <h2>Call of Duty Mobile</h2>
         <!-- <h3>What is COD?</h3>
         <p>
             Google it <a href="https://www.google.com/search?q=call+of+duty">here</a>
         </p> -->
-        <img src="images/COD/IMG_0070.JPG" alt="A screenshot of one of my best games in COD Mobile" width="50%"/>
-        <p class="caption">This screenshot is of one of my best games in CoD Mobile. I don't have any screenshots from my PS4 of CoD.</p>
-
+        <a href="images/COD/IMG_0070.JPG" target="light" data-lightbox="cod" data-title="One of the only screenshots on my phone from COD Mobile. I don't have any pictures from console.">
+            <img src="images/COD/IMG_0070.JPG" alt="A screenshot of one of my games in COD Mobile" width="50%"/>
+        </a>
         <h2>Head Soccer</h2>
         <!-- <h3>What is Head Soccer?</h3>
         <p>
             Google it <a href="https://www.google.com/search?q=head+soccer">here</a>
         </p> -->
-        <img src="images/HS/IMG_1243.PNG" alt="A screenshot of the characters I have in Head Soccer" width="60%"/>
+        <a href="images/HS/IMG_1243.PNG" target="light" data-lightbox="hs" data-title="A screenshot of all the characters I have in Head Soccer. Some of the characters I don't have require you to download an app or pay real money, some of them just took too long to get, and the last two were added to the game after I stopped playing." data-alt="Head Soccer">
+            <img src="images/HS/IMG_1243.PNG" alt="A screenshot of the characters I have in Head Soccer" width="60%"/>
+        </a>
     </main>
-    
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'imageFadeDuration': 100
+        })
+    </script>
 </body>
 <footer>
     <p>This is a footer</p>

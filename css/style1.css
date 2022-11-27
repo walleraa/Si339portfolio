@@ -10,27 +10,52 @@ body{
   
  }
  nav li{
-    margin-left: 25px;
     list-style-type: upper-roman;
     display: inline-block;
     padding: 10px;
     border-radius: 15px;
-    border-style: solid;
-    background-color: aqua;
-    border-color: green;
-    width: 20%;
-    margin: 20px;
+    background-color: #00274C;
+    border: green solid 1px;
+    margin: 5px;
+ }
+ nav li a {
+   color: #FFCB05;
  }
  #current{
-    background-color: yellow;
+    background-color: #FFCB05;
     border-color: black;
  }
+ #current a {
+   color: #00274C;
+ }
 
- p{
+p{
      cursor: w-resize;
      border-radius: 15px;
-     border-style: dotted;
+     border: black dotted 1px;
      margin: 0px 30px;
      text-align: center;
  }
 
+ .skip{
+   position: absolute;
+   transition: top .5s ease-in 0s;
+   top: -40px;
+   border: black solid 1px;
+   border-radius: 5px;
+   background-color: white;
+ }
+ 
+ .skip:focus{
+   transition: top .5s ease-in 0s;
+   top: 5px;
+ }
+
+ @media screen and (prefers-reduced-motion) {
+   .skip {
+      transition: none;
+   }
+   .skip:focus {
+      transition: none;
+   }
+ }
