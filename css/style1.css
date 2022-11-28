@@ -74,9 +74,6 @@ footer {
 .fa-github {
    color: #FFCB05;
 }
-#copyright {
-   float: right;
-}
 
 @media screen and (min-width:600px) {
    header {
@@ -85,6 +82,9 @@ footer {
    }
    main {
       padding-top: 60px;
+   }
+   #copyright {
+      float: right;
    }
 }
 @media screen and (min-width:900px) {

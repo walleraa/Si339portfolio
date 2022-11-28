@@ -1,0 +1,46 @@
+#etch {
+    display: none;
+    width: 100%;
+    margin: 5px;
+}
+#warn {
+    margin: 5px;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+@media screen and (min-width:600px) {
+    #etch {
+        display: inline-block;
+    }
+    #instructions p {
+        border: none;
+        color: #FFCB05;
+    }
+    #instructions {
+        border-radius: 5px;
+        background-color: #00274C;
+    }
+    #warn {
+        display: none;
+    }
+    #sketch{
+        width: 65%;
+        border: black solid 5px;
+     }
+     #wrap{
+        text-align:center;
+        margin: 5px 0px;
+     }
+     #buttons{
+        /* margin-left: 17.5%; */
+        text-align:center;
+        margin-bottom: 5px;
+     }
+     button {
+        width: 50px;
+     }
+     #tab {
+        width: 80px;
+     }
+}
