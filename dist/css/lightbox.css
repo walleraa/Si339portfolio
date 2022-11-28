@@ -161,6 +161,7 @@ body.lb-disable-scrolling {
   float: left;
   text-align: left;
   line-height: 1.1em;
+  background-color: rgba(17, 17, 17, 0.779);
 }
 
 .lb-data .lb-caption {
