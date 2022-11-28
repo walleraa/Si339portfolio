@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/flex.css">
     <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5207da2a75.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="#main" class="skip" tabindex=0>Skip to content</a>
         <nav>
+            <div id="drop" tabindex=0>
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <ul class="flex">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href="terraria.html">Terraria</a></li>
@@ -22,11 +26,10 @@
                 <li id="current"><a href="misc.html">Other Games (Current Tab)</a></li>
             </ul>
         </nav>
-        <h1>Other Games</h1>
-
     </header>
     
-    <main id="main">    
+    <main id="main">
+        <h1>Other Games</h1>    
         <p>These are a bunch of other games that I've played for far too long over the years, but I don't have a lot of screenshots for each.<br>Feel free to click on the images for a closer look and maybe some hidden captions!</p>
         
         <h2>Dead By Daylight</h2>
@@ -124,6 +127,15 @@
     </script>
 </body>
 <footer>
-    <p>This is a footer</p>
+    <span>
+        Contact me: <a href="mailto:walleraa@umich.edu"><i class="fa-solid fa-envelope"></i></a>
+    </span>
+    <span>
+        Other random projects: <a href="https://github.com/walleraa"><i class="fa-brands fa-github"></i></a>
+    </span>
+    <span id="copyright">
+        &copy Aaron Waller
+    </span>
+    <script src="js/copyright.js"></script>
 </footer>
 </html>
