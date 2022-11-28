@@ -75,6 +75,11 @@ footer {
    color: #FFCB05;
 }
 
+footer a {
+   color: #FFCB05;
+   
+}
+
 @media screen and (min-width:600px) {
    header {
       padding: 0px;
