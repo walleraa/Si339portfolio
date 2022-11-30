@@ -38,6 +38,7 @@ function down() {
 function clear() {
     ctx.clearRect(0, 0, width, height);
     ctx.closePath();
+    ctx.strokeStyle = "black";
     ctx.beginPath();
 }
 function reset() {
@@ -51,9 +52,6 @@ ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 1;
 ctx.moveTo(x, y);
-// ctx.strokeStyle = "green";
-// ctx.fillStyle = "blue";
-// ctx.fillRect(0, 0, width, height);
 
 document.querySelector("#up").addEventListener("click",
     () => {
@@ -135,5 +133,77 @@ document.querySelector("#reset").addEventListener("click",
     () => {
         console.log("Reset position to 0,0");
         reset();
+    }
+);
+document.querySelector("#bw").addEventListener("click",
+    () => {
+        console.log("Changing color to black on white");
+        ctx.strokeStyle = "black";
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#wb").addEventListener("click",
+    () => {
+        console.log("Changing color to white on black");
+        ctx.strokeStyle = "white";
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#gb").addEventListener("click",
+    () => {
+        console.log("Changing color to green on black");
+        ctx.strokeStyle = "green";
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#bb").addEventListener("click",
+    () => {
+        console.log("Changing color to blue on black");
+        ctx.strokeStyle = "blue";
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#ob").addEventListener("click",
+    () => {
+        console.log("Changing color to orange on black");
+        ctx.strokeStyle = "orange";
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#rb").addEventListener("click",
+    () => {
+        console.log("Changing color to red on black");
+        ctx.strokeStyle = "red";
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#yb").addEventListener("click",
+    () => {
+        console.log("Changing color to yellow on black");
+        ctx.strokeStyle = "yellow";
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#bm").addEventListener("click",
+    () => {
+        console.log("Changing color to maize on blue");
+        ctx.strokeStyle = "#FFCB05";
+        ctx.fillStyle = "#00274C";
+        ctx.fillRect(0, 0, width, height);
+    }
+);
+document.querySelector("#mb").addEventListener("click",
+    () => {
+        console.log("Changing color to blue on maize");
+        ctx.strokeStyle = "#00274C";
+        ctx.fillStyle = "#FFCB05";
+        ctx.fillRect(0, 0, width, height);
     }
 );

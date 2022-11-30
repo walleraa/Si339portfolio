@@ -26,5 +26,6 @@
 @media screen and (min-width:900px) {
     #current {
         flex: 2 1 0px;
+        order: -1;
     }
 }

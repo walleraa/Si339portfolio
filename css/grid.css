@@ -15,6 +15,7 @@
     align-self: center;
     border-radius: 0px;
     margin-bottom: 20px;
+    font-family: Papyrus, Copperplate, Arial;
     /* grid-column: 2/ span 1; */
 }
 @media screen and (min-width:600px) {
@@ -24,6 +25,30 @@
 }
 @media screen and (min-width:900px) {
     .grid {
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid a:nth-child(4n+1) {
+        grid-column: 1/ span 2;
+    }
+    .grid p:nth-child(4n+2) {
+        grid-column: 3/ span 1;
+    }
+    .grid a:nth-child(4n+3) {
+        grid-column: 2/ span 2;
+    }
+    .grid p:nth-child(4n) {
+        grid-column: 1/ span 1;
+    }
+    #uno {
+        grid-row-start: 2;
+    }
+    #dos {
+        grid-row-start: 4;
+    }
+    #tres {
+        grid-row-start: 6;
+    }
+    #quatro {
+        grid-row-start: 8;
     }
 }
