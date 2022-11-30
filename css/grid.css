@@ -16,6 +16,8 @@
     border-radius: 0px;
     margin-bottom: 20px;
     font-family: Papyrus, Copperplate, Arial;
+    background-color: #00274C;
+    color: #FFCB05;
     /* grid-column: 2/ span 1; */
 }
 @media screen and (min-width:600px) {

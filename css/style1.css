@@ -8,10 +8,15 @@ header {
 }
 
 body{
-    margin:5px;
-    padding:5px;
-    line-height:1.15;
- }
+   margin:5px;
+   padding:5px;
+   line-height:1.15;
+   color: #FFCB05;
+   background-color:#00274C; 
+}
+body a{
+   color: #00274C;
+}
 main {
    padding-top: 20px;
 }
@@ -49,6 +54,8 @@ p{
      margin: 0px 30px;
      text-align: center;
      font-family: Copperplate, Arial;
+     background-color: #FFCB05;
+     color: #00274C;
  }
 
  .skip{
@@ -67,18 +74,18 @@ p{
 
 footer {
    border: black solid 3px;
-   background-color: #00274C;
-   color: #FFCB05;
+   color: #00274C;
+   background-color: #FFCB05;
 }
 .fa-envelope {
-   color: #FFCB05;
+   color: #00274C;
 }
 .fa-github {
-   color: #FFCB05;
+   color: #00274C;
 }
 
 footer a {
-   color: #FFCB05;
+   color: #00274C;
    
 }
 

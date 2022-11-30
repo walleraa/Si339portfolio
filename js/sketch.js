@@ -52,6 +52,9 @@ ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 1;
 ctx.moveTo(x, y);
+ctx.strokeStyle = "black";
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, width, height);
 
 document.querySelector("#up").addEventListener("click",
     () => {
