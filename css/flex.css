@@ -4,9 +4,6 @@
     flex-wrap: nowrap;
     width: 100%;
 }
-header {
-    background-color: #00274C;
-}
 /* .flex {
     display: flex;
     flex-direction: column;
@@ -14,9 +11,6 @@ header {
     width: 100%;
 } */
 @media screen and (min-width:600px) {
-    header {
-        background-color: white;
-    }
     #drop{
         display:none;
     }

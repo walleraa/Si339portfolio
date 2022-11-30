@@ -1,6 +1,6 @@
 header {
    position: fixed;
-   background: #fff;
+   background: #00274C;
    border-radius: 5px;
    border: grey solid 3px;
    /* margin-bottom: 20px; */
@@ -31,7 +31,7 @@ main {
     padding: 10px;
     border-radius: 15px;
     background-color: #00274C;
-    border: black solid 1px;
+    border: #FFCB05 solid 1px;
     margin: 5px;
  }
  nav li a {
