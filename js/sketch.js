@@ -10,6 +10,8 @@ const ctx = canvas.getContext('2d');
 let x = 0;
 let y = 0;
 const degree = 5;
+let line = "black";
+let ground = "white";
 
 function up() {
     if (y > 0)
@@ -37,10 +39,10 @@ function down() {
 }
 function clear() {
     ctx.clearRect(0, 0, width, height);
-    ctx.fillStyle = "white";
+    ctx.fillStyle = ground;
     ctx.fillRect(0, 0, width, height);
     ctx.closePath();
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = line;
     ctx.beginPath();
 }
 function reset() {
@@ -54,8 +56,8 @@ ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 1;
 ctx.moveTo(x, y);
-ctx.strokeStyle = "black";
-ctx.fillStyle = "white";
+ctx.strokeStyle = line;
+ctx.fillStyle = ground;
 ctx.fillRect(0, 0, width, height);
 
 document.querySelector("#up").addEventListener("click",
@@ -103,19 +105,20 @@ document.querySelector("#right").addEventListener("click",
 //     };
 document.onkeydown =
     (event) => {
-        if (event.key === "a" || event.keyCode === 37) {
+        // console.log(event.key);
+        if (event.key === "a" || event.key === "ArrowLeft") {
             console.log("LEFT");
             left();
         }//LEFT
-        else if (event.key === "w" || event.keyCode === 38) {
+        else if (event.key === "w" || event.key === "ArrowUp") {
             console.log("UP");
             up();
         }//UP
-        else if (event.key === "d" || event.keyCode === 39) {
+        else if (event.key === "d" || event.key === "ArrowRight") {
             console.log("RIGHT");
             right();
         }//RIGHT
-        else if (event.key === "s" || event.keyCode === 40) {
+        else if (event.key === "s" || event.key === "ArrowDown") {
             console.log("DOWN");
             down();
         }//DOWN
@@ -144,7 +147,9 @@ document.querySelector("#bw").addEventListener("click",
     () => {
         console.log("Changing color to black on white");
         ctx.strokeStyle = "black";
+        line = "black";
         ctx.fillStyle = "white";
+        ground = "white";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -152,7 +157,9 @@ document.querySelector("#wb").addEventListener("click",
     () => {
         console.log("Changing color to white on black");
         ctx.strokeStyle = "white";
+        line = "white";
         ctx.fillStyle = "black";
+        ground = "black";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -160,7 +167,9 @@ document.querySelector("#gb").addEventListener("click",
     () => {
         console.log("Changing color to green on black");
         ctx.strokeStyle = "green";
+        line = "green";
         ctx.fillStyle = "black";
+        ground = "black";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -168,7 +177,9 @@ document.querySelector("#bb").addEventListener("click",
     () => {
         console.log("Changing color to blue on black");
         ctx.strokeStyle = "blue";
+        line = "blue";
         ctx.fillStyle = "black";
+        ground = "black";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -176,7 +187,9 @@ document.querySelector("#ob").addEventListener("click",
     () => {
         console.log("Changing color to orange on black");
         ctx.strokeStyle = "orange";
+        line = "orange";
         ctx.fillStyle = "black";
+        ground = "black";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -184,7 +197,9 @@ document.querySelector("#rb").addEventListener("click",
     () => {
         console.log("Changing color to red on black");
         ctx.strokeStyle = "red";
+        line = "red";
         ctx.fillStyle = "black";
+        ground = "black";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -192,7 +207,9 @@ document.querySelector("#yb").addEventListener("click",
     () => {
         console.log("Changing color to yellow on black");
         ctx.strokeStyle = "yellow";
+        line = "yellow";
         ctx.fillStyle = "black";
+        ground = "black";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -200,7 +217,9 @@ document.querySelector("#bm").addEventListener("click",
     () => {
         console.log("Changing color to maize on blue");
         ctx.strokeStyle = "#FFCB05";
+        line = "#FFCB05";
         ctx.fillStyle = "#00274C";
+        ground = "#00274C";
         ctx.fillRect(0, 0, width, height);
     }
 );
@@ -208,7 +227,9 @@ document.querySelector("#mb").addEventListener("click",
     () => {
         console.log("Changing color to blue on maize");
         ctx.strokeStyle = "#00274C";
+        line = "#00274C";
         ctx.fillStyle = "#FFCB05";
+        ground = "#FFCB05";
         ctx.fillRect(0, 0, width, height);
     }
 );
