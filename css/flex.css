@@ -10,6 +10,9 @@
     flex-wrap: nowrap;
     width: 100%;
 } */
+#drop{
+    display: block;
+}
 @media screen and (min-width:600px) {
     header {
         width:30px;
@@ -26,6 +29,12 @@
 @media screen and (min-width:900px) {
     #drop{
         display:none;
+    }
+    .flex{
+        display: flex;
+    }
+    header {
+        width: 98%;
     }
     #current {
         flex: 2 1 0px;

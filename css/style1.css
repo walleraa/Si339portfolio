@@ -99,9 +99,6 @@ footer a {
       /* padding: 0px; */
       width: 98%;
    }
-   main {
-      padding-top: 60px;
-   }
    #copyright {
       float: right;
    }
@@ -109,6 +106,9 @@ footer a {
 @media screen and (min-width:900px) {
    header {
       padding: 0px;
+   }
+   main {
+      padding-top: 60px;
    }
 }
  
