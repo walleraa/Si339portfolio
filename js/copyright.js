@@ -42,12 +42,14 @@ document.getElementById("drop").addEventListener("keypress" ,
 window.addEventListener("resize",
     () => {
         // console.log(window.innerWidth);
-        if (mobile && window.innerWidth >= 600) {
+        if (mobile && window.innerWidth >= 900) {
+            open = false;
             mobile = false;
             document.getElementById("header").style.width = "98%";
             document.getElementsByClassName("flex")[0].style.display = "flex";
         }
-        else if (!mobile && window.innerWidth < 600) {
+        else if (!mobile && window.innerWidth < 900) {
+            open = true;
             mobile = true;
             document.getElementById("header").style.width = "30px";
             document.getElementsByClassName("flex")[0].style.display = "none";

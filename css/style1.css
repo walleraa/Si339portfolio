@@ -96,7 +96,7 @@ footer a {
 
 @media screen and (min-width:600px) {
    header {
-      padding: 0px;
+      /* padding: 0px; */
       width: 98%;
    }
    main {
@@ -107,9 +107,9 @@ footer a {
    }
 }
 @media screen and (min-width:900px) {
-   /* main {
-      padding-top: 40px;
-   } */
+   header {
+      padding: 0px;
+   }
 }
  
 @media screen and (prefers-reduced-motion) {
