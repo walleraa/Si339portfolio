@@ -3,24 +3,6 @@
     grid-template-columns: 100%;
     row-gap: 5px;
 }
-.grid img{
-    border: solid black 1px;
-    padding: 5px;
-    width: 95%;
-    height: 95%;
-    background-color: #FFCB05;
-    /* grid-column: 1 / span 1; */
-}
-.grid p{
-    border: none;
-    align-self: center;
-    border-radius: 0px;
-    margin-bottom: 20px;
-    font-family: Papyrus, Copperplate, Arial;
-    background-color: #00274C;
-    color: #FFCB05;
-    /* grid-column: 2/ span 1; */
-}
 @media screen and (min-width:600px) {
     .grid{
         grid-template-columns: 50% 50%;

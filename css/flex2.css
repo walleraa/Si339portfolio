@@ -1,0 +1,17 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:600px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width:900px) {
+    .row:nth-child(2n) p{
+        order: -1;
+    }
+
+}
